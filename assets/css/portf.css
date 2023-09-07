@@ -1,0 +1,168 @@
+/*
+  BASE HOME
+*/
+body, html {
+  overflow-x: hidden;
+}
+
+.my-name:hover {
+  cursor: pointer;
+}
+
+.refWikipedia:hover {
+  cursor: help;
+}
+
+p {
+  cursor: default;
+}
+
+#spanWiki a {
+  color: #172a74;
+  text-decoration: none;
+}
+
+/*
+  CARDS HOME - RIGHT
+*/
+
+#preview-posts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.last-posts-header {
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+}
+
+#preview-posts > .posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0;
+  max-width: 550px;
+}
+
+.posts > .post {
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 13px;
+  padding: 0;
+  border: none;
+  color: white;
+
+  display: flex;
+  flex-direction: row;
+  gap: .5rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.post * {
+  padding: 0;
+  margin: 0;
+}
+
+.post > .icon {
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.post > .icon > img {
+  width: 60px;
+}
+.post > .content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-right: 1rem;
+}
+.post > .content > .title {
+  font-size: 13px;
+}
+.post > .content > .date {
+  font-size: 10px;
+}
+.post > .post-learn-more {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #172a74;
+  border-radius: 0 11px 11px 0;
+  width: 35px;
+}
+.post-learn-more:hover > .learn-more > svg {
+  fill: rgba(255,255,255,0.9);
+  cursor: pointer;
+}
+.post-learn-more > .learn-more > svg {
+  fill: rgba(255,255,255,0.7);
+  width: 16px;
+  height: 100%;
+}
+
+/* 
+  MODAL POST STYLE
+*/
+#post-modal-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  padding: 1rem 1rem 0 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  overflow: hidden;
+}
+.post-header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.post-header > #post-close {
+  position: absolute;
+  width: 40px;
+  right: -5px;
+  top: -10px;
+}
+.post-header > #post-close:hover {
+  cursor: pointer;
+}
+.post-header > .post-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.post-body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-top: 1rem;
+  font-size: 14px;
+  height: calc(100%);
+  padding-bottom: 4rem;
+  white-space: break-spaces;
+  text-align: justify;
+  padding-right: 1rem;
+}
+
+/*
+  COLOR TO EYE
+*/
+.color-read-light-day {
+  background-color: rgb(191,191,191);
+  color: rgb(40, 55, 65);
+}
+.color-read-light-night {
+  background-color: rgb(34,34,34);
+  color: rgb(238,238,238);
+}

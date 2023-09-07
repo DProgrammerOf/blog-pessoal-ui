@@ -1,0 +1,36 @@
+div {
+}
+
+@media (max-width: 768px) {
+  #textoHome {
+    height: auto !important;
+    padding: 2em;
+  }
+
+  #preview-posts {
+    justify-content: flex-start;
+  }
+
+  .post {
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 576px) {
+  #textoHome {
+    height: 500px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  #textoHome section {
+    max-width: 450px !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  #textoHome section {
+    max-width: 600px !important;
+  }
+}
+
