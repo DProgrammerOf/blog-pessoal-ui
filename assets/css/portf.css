@@ -2,7 +2,7 @@
   BASE HOME
 */
 body, html {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .my-name:hover {
@@ -113,13 +113,14 @@ p {
   MODAL POST STYLE
 */
 #post-modal-content {
+  animation-duration: 300ms;
   position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   z-index: 2;
-  padding: 1rem 1rem 0 1rem;
+  padding: 1rem 0.3rem 1rem 1rem;
   font-family: 'Courier New', Courier, monospace;
   overflow: hidden;
 }
@@ -139,6 +140,9 @@ p {
 .post-header > #post-close:hover {
   cursor: pointer;
 }
+.post-header > #post-close > svg {
+  fill: white;
+}
 .post-header > .post-title {
   font-size: 18px;
   font-weight: bold;
@@ -148,8 +152,7 @@ p {
   overflow-x: hidden;
   margin-top: 1rem;
   font-size: 14px;
-  height: calc(100%);
-  padding-bottom: 4rem;
+  height: calc(100% - 2rem);
   white-space: break-spaces;
   text-align: justify;
   padding-right: 1rem;
@@ -165,4 +168,44 @@ p {
 .color-read-light-night {
   background-color: rgb(34,34,34);
   color: rgb(238,238,238);
+}
+
+/*
+  MODAL STYLE SCROLLBAR
+*/
+
+/* Firefox */
+.post-body {
+  scrollbar-width: thin;
+  scrollbar-color: #172A74 #DFE9EB;
+}
+/* Chrome, Edge and Safari */
+.post-body::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+.post-body::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+.post-body::-webkit-scrollbar-track:hover {
+  background-color: transparent;
+}
+
+.post-body::-webkit-scrollbar-track:active {
+  background-color: transparent;
+}
+
+.post-body::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #243784d3;
+}
+
+.post-body::-webkit-scrollbar-thumb:hover {
+  background-color: #223DA9;
+}
+
+.post-body::-webkit-scrollbar-thumb:active {
+  background-color: #223DA9;
 }

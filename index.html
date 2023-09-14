@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Port</title>
+    <title>Blog - Renan Lima</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abhaya+Libre&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Belleza&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/Header-Blue.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="assets/css/portf.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
@@ -23,7 +23,7 @@
         <div class="row" style="height: 100%;">
             <div class="col-md-7 col-lg-6 col-xl-6 col-xxl-6 d-flex justify-content-center align-items-center" id="textoHome" style="height: inherit;">
                 <section style="height: 300px;max-width: 90%;padding-right: 0px;">
-                    <p class="d-flex flex-row flex-grow-0 align-items-xl-end" style="color: var(--bs-white);font-size: 26px;line-height: 11px;"><br><i class="fa fa-hand-peace-o bounce animated" style="font-size: 50px;filter: saturate(100%);color: var(--bs-teal);float: left;"></i><span class="bounce animated" style="height: 26px;margin-left: 15px;"><br>Eaii, tudo bem?<br></span>&nbsp; <br><br></p>
+                    <p class="d-flex flex-row flex-grow-0 align-items-xl-end" style="color: var(--bs-white);font-size: 26px;line-height: 11px;"><br><i class="fa fa-hand-peace-o animate__animated animate__swing" style="font-size: 50px;filter: saturate(100%);color: var(--bs-teal);float: left;"></i><span class="animate__animated animate__bounce" style="height: 26px;margin-left: 15px;"><br>Eaii, tudo bem?<br></span>&nbsp; <br><br></p>
                     <p data-aos="fade" data-aos-delay="200" data-aos-once="true" style="color: var(--bs-white);line-height: 30px;font-size: 21px;">meu nome é<strong>&nbsp;</strong><span class="text-start text-success my-name" style="font-weight: bold;text-decoration:  underline;">Renan</span>, programador há um bom tempo, já trabalhei com&nbsp;<span class="refWikipedia">php</span>, <span class="refWikipedia" title="Linguagem antiga">java</span>,&nbsp;<span class="refWikipedia">c raiz</span>, até <span class="refWikipedia">pascal</span>, entre outras coisas...<br>desenvolvi essa página para meus projetos e estudos.<br><br></p>
                     <p data-aos="fade" data-aos-delay="200" data-aos-once="true" style="color: var(--bs-white);font-size: 20px;">seja bem-vindo e aprenda junto comigo&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-rocket tada animated infinite" data-bs-toggle="tooltip" data-bss-tooltip="" data-bs-placement="right" title="Bora lá?" style="width: 30px;height: 30px;font-size: 30px;">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -33,11 +33,11 @@
                         </svg></p>
                 </section>
             </div>
-            <div class="col-md-5 col-lg-6 col-xl-5 col-xxl-6" id="preview-posts" style="padding-right: 0px;padding-left: 0px;height: inherit;">
-                <div class="last-posts-header">
-                    <span>Últimas postagens</span>
+            <div class="col-md-4 col-lg-6 col-xl-5 col-xxl-6" id="preview-posts" style="padding-right: 0px;padding-left: 0px;height: inherit;">
+                <div class="last-posts-header animate__animated animate__fadeIn">
+                    <span>Últimos estudos</span>
                 </div>
-                <div class="row posts">
+                <div class="row posts animate__animated animate__slideInRight">
                     <div class="post">
                         <span class="icon">
                             <img src="./assets/img/php_icon.png" alt="PHP Icon">
@@ -111,13 +111,13 @@
     </div>
 
     <!-- MODAL WIKIPEDIA -->
-    <div data-aos="fade" id="divWikipedia">
+    <div id="divWikipedia" class="animate__animated animate__fadeIn">
         <h6 style="font-weight: bold;">Heading</h6>
         <div style="overflow: hidden;text-overflow: inherit;"></div><span id="spanWiki" style="font-size: 12px;text-align: right;">Text</span>
     </div>
 
     <!-- MODAL POST -->
-    <div id="post-modal-content" class="color-read-light-night" style="display: none;" data-aos="fade">
+    <div id="post-modal-content" class="color-read-light-night" style="display: none;">
         <div class="post-header">
             <span class="post-title">Title</span>
             <span id="post-close">
@@ -126,6 +126,26 @@
         </div>
 
         <div class="post-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lectus nulla, egestas quis tincidunt semper, consequat eu orci. Fusce vitae ullamcorper quam. Donec ut lectus tortor. Nulla diam nisi, consectetur sed placerat eget, gravida et nunc. Donec ac dapibus quam. Fusce placerat arcu eu elit luctus, eu sagittis turpis euismod. Fusce cursus, dolor sollicitudin laoreet sagittis, ex odio imperdiet purus, sed malesuada augue metus vel arcu. Fusce nisl elit, iaculis et lorem sit amet, dapibus auctor nulla. Pellentesque scelerisque diam augue, in pulvinar nisl ullamcorper hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vulputate lacinia pellentesque. Sed bibendum posuere rhoncus. Fusce dapibus, ante ut imperdiet vestibulum, odio nunc eleifend nisi, id iaculis arcu massa in felis. Sed eget urna quis est tincidunt finibus. Sed sagittis, lectus eget hendrerit rutrum, nisi dolor tincidunt mi, ut bibendum ipsum nisi eget nunc.
+
+            Fusce felis nunc, <span class="refWikipedia">InnoDB</span> at blandit ac, condimentum at lacus. Morbi ac tortor ultrices, cursus diam sit amet, sollicitudin nibh. Suspendisse sodales malesuada erat nec ullamcorper. Aliquam tempus magna ut massa rhoncus tincidunt. Suspendisse at orci eu dolor varius egestas. Suspendisse tincidunt mattis dui. Proin erat velit, commodo vitae ante et, tempor pulvinar ante. Fusce imperdiet magna et sem finibus, vitae eleifend odio porta. Cras congue ex ipsum, quis vehicula orci lacinia sagittis. Suspendisse tempor pretium pellentesque. Duis consectetur ex ut eros dictum consequat.
+
+            Phasellus in suscipit mi. Donec nec congue tortor. In vitae varius sem, ac dignissim diam. Sed ullamcorper nulla quis ex sodales volutpat. Sed et massa tellus. Fusce ac vulputate mauris. Etiam venenatis ut metus at vestibulum. Nam id aliquet mi, at porta nunc. Donec eget luctus velit, nec mollis nunc.
+
+            Mauris ultricies tellus eu molestie auctor. Duis ullamcorper libero sit amet congue efficitur. Donec sem sapien, efficitur id elit eu, pretium laoreet sem. Pellentesque ornare accumsan turpis, ac convallis lacus tincidunt at. Suspendisse feugiat augue vel tortor interdum scelerisque. Vivamus tortor dolor, tempus id convallis in, semper in ipsum. Integer porta leo sit amet quam rutrum, vel tempor arcu laoreet. Quisque sit amet felis turpis. Ut maximus tempus leo, sed pulvinar dui blandit posuere. Nullam mattis sem nisi, nec suscipit sem dignissim et. Mauris sed purus ac neque efficitur ultrices. Etiam neque libero, tempor quis turpis ut, pulvinar blandit leo. Mauris sed felis sed neque facilisis consequat non sed purus.
+
+            Nulla ac aliquet lorem, eget molestie velit. Integer id condimentum ipsum. Nam fermentum, turpis eu vehicula ornare, nunc lectus <span class="refWikipedia">InnoDB</span> ante, vel dapibus mi turpis pharetra odio. Suspendisse ac felis vel lectus fringilla fringilla. Proin rhoncus tellus in risus convallis lobortis. Donec vehicula interdum erat, et blandit leo lobortis a. Praesent massa dolor, tempus in nunc viverra, dictum posuere nunc. Suspendisse porttitor sem eu efficitur cursus. Ut in mi scelerisque, scelerisque eros ut, pellentesque sem. Duis iaculis felis nibh, eu iaculis magna gravida id. Maecenas eu erat lacus.
+            
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lectus nulla, egestas quis tincidunt semper, consequat eu orci. Fusce vitae ullamcorper quam. Donec ut lectus tortor. Nulla diam nisi, consectetur sed placerat eget, gravida et nunc. Donec ac dapibus quam. Fusce placerat arcu eu elit luctus, eu sagittis turpis euismod. Fusce cursus, dolor sollicitudin laoreet sagittis, ex odio imperdiet purus, sed malesuada augue metus vel arcu. Fusce nisl elit, iaculis et lorem sit amet, dapibus auctor nulla. Pellentesque scelerisque diam augue, in pulvinar nisl ullamcorper hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vulputate lacinia pellentesque. Sed bibendum posuere rhoncus. Fusce dapibus, ante ut imperdiet vestibulum, odio nunc eleifend nisi, id iaculis arcu massa in felis. Sed eget urna quis est tincidunt finibus. Sed sagittis, lectus eget hendrerit rutrum, nisi dolor tincidunt mi, ut bibendum ipsum nisi eget nunc.
+
+            Fusce felis nunc, <span class="refWikipedia">InnoDB</span> at blandit ac, condimentum at lacus. Morbi ac tortor ultrices, cursus diam sit amet, sollicitudin nibh. Suspendisse sodales malesuada erat nec ullamcorper. Aliquam tempus magna ut massa rhoncus tincidunt. Suspendisse at orci eu dolor varius egestas. Suspendisse tincidunt mattis dui. Proin erat velit, commodo vitae ante et, tempor pulvinar ante. Fusce imperdiet magna et sem finibus, vitae eleifend odio porta. Cras congue ex ipsum, quis vehicula orci lacinia sagittis. Suspendisse tempor pretium pellentesque. Duis consectetur ex ut eros dictum consequat.
+
+            Phasellus in suscipit mi. Donec nec congue tortor. In vitae varius sem, ac dignissim diam. Sed ullamcorper nulla quis ex sodales volutpat. Sed et massa tellus. Fusce ac vulputate mauris. Etiam venenatis ut metus at vestibulum. Nam id aliquet mi, at porta nunc. Donec eget luctus velit, nec mollis nunc.
+
+            Mauris ultricies tellus eu molestie auctor. Duis ullamcorper libero sit amet congue efficitur. Donec sem sapien, efficitur id elit eu, pretium laoreet sem. Pellentesque ornare accumsan turpis, ac convallis lacus tincidunt at. Suspendisse feugiat augue vel tortor interdum scelerisque. Vivamus tortor dolor, tempus id convallis in, semper in ipsum. Integer porta leo sit amet quam rutrum, vel tempor arcu laoreet. Quisque sit amet felis turpis. Ut maximus tempus leo, sed pulvinar dui blandit posuere. Nullam mattis sem nisi, nec suscipit sem dignissim et. Mauris sed purus ac neque efficitur ultrices. Etiam neque libero, tempor quis turpis ut, pulvinar blandit leo. Mauris sed felis sed neque facilisis consequat non sed purus.
+
+            Nulla ac aliquet lorem, eget molestie velit. Integer id condimentum ipsum. Nam fermentum, turpis eu vehicula ornare, nunc lectus sodales ante, vel dapibus mi turpis pharetra odio. Suspendisse ac felis vel lectus fringilla fringilla. Proin rhoncus tellus in risus convallis lobortis. Donec vehicula interdum erat, et blandit leo lobortis a. Praesent massa dolor, tempus in nunc viverra, dictum posuere nunc. Suspendisse porttitor sem eu efficitur cursus. Ut in mi scelerisque, scelerisque eros ut, pellentesque sem. Duis iaculis felis nibh, eu iaculis magna gravida id. Maecenas eu erat lacus.
+            
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lectus nulla, egestas quis tincidunt semper, consequat eu orci. Fusce vitae ullamcorper quam. Donec ut lectus tortor. Nulla diam nisi, consectetur sed placerat eget, gravida et nunc. Donec ac dapibus quam. Fusce placerat arcu eu elit luctus, eu sagittis turpis euismod. Fusce cursus, dolor sollicitudin laoreet sagittis, ex odio imperdiet purus, sed malesuada augue metus vel arcu. Fusce nisl elit, iaculis et lorem sit amet, dapibus auctor nulla. Pellentesque scelerisque diam augue, in pulvinar nisl ullamcorper hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vulputate lacinia pellentesque. Sed bibendum posuere rhoncus. Fusce dapibus, ante ut imperdiet vestibulum, odio nunc eleifend nisi, id iaculis arcu massa in felis. Sed eget urna quis est tincidunt finibus. Sed sagittis, lectus eget hendrerit rutrum, nisi dolor tincidunt mi, ut bibendum ipsum nisi eget nunc.
 
             Fusce felis nunc, interdum at blandit ac, condimentum at lacus. Morbi ac tortor ultrices, cursus diam sit amet, sollicitudin nibh. Suspendisse sodales malesuada erat nec ullamcorper. Aliquam tempus magna ut massa rhoncus tincidunt. Suspendisse at orci eu dolor varius egestas. Suspendisse tincidunt mattis dui. Proin erat velit, commodo vitae ante et, tempor pulvinar ante. Fusce imperdiet magna et sem finibus, vitae eleifend odio porta. Cras congue ex ipsum, quis vehicula orci lacinia sagittis. Suspendisse tempor pretium pellentesque. Duis consectetur ex ut eros dictum consequat.
@@ -141,6 +161,7 @@
     <!-- SCRIPTS -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/animate.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="assets/js/axios.min.js"></script>

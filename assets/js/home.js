@@ -15,16 +15,20 @@ $(function(){
     $(".post-learn-more").on('click', function(){
         const post_id = $(this).data('post-id');
         
-        $("html").animate({scrollTop:0}, 500, 'swing', function() { 
-            $("#post-modal-content").css('display', 'block'); // show
-            $('.post-body').scrollTop(0); // scroll to begin post body
-            $('.post-body').position().top; // focus
+        $("html").animate({scrollTop:0}, 300, 'swing', function() { 
+            $("#post-modal-content").css('display', 'block');
+            window.animateCSS('#post-modal-content', 'slideInUp').then((message) => {
+                $('.post-body').scrollTop(0); // scroll to begin post body
+                $('.post-body').position().top; // focus
+            });
         }); 
     });
 
     // Close post
     $("#post-close").on('click', function(){
-        $("#post-modal-content").css('display', 'none');
+        window.animateCSS('#post-modal-content', 'slideOutDown').then((message) => {
+            $("#post-modal-content").css('display', 'none');
+        });
     });
 
 });

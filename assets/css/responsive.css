@@ -1,7 +1,11 @@
 div {
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  body, html {
+    overflow-y: scroll;
+  }
+
   #textoHome {
     height: auto !important;
     padding: 2em;
